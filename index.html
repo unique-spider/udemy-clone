@@ -10,10 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!--NAVBAR-->
     <div class="navbar">
         <div class="navbar__s1">
             <h1 class="navbar__s1__title">
@@ -22,20 +25,26 @@
 
         </div>
         <div class="navbar__s2">
-            
+
             <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-            <input class="navbar__s2__search" placeholder="Type Anything Here"> 
+            <input class="navbar__s2__search" placeholder="Type Anything Here">
         </div>
         <div class="navbar__s3">
-        Courses
-        My Learning    
-        <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+            Courses
+            <!-- My Learning-->
+            <div class="mylearning">
+                <p>My learning</p>
+                <div class="mylearning__popup">
+                    <p>You Didn't Purchase Anything Yet</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
             <i class="fa-solid fa-bell" style="color: #000000;"></i>
             <i class="fa-solid fa-user" style="color: #000000;"></i>
         </div>
 
     </div>
-
+    <!--CATEGORIES-->
     <div class="categories">
         <p>Development</p>
         <p>Business</p>
@@ -44,21 +53,28 @@
         <p>Marketing</p>
         <p>Design</p>
     </div>
+    <!--SALE IMAGE-->
     <div class="image-sales">
-<img src="./Images/salesimage.jpg"  alt="Sales-Images">
-        
+        <img src="./Images/salesimage.jpg" alt="Sales-Images">
+        <div class="image-sales__offer">
+            <h2>Udemy Flash Salws! 24 Hours to save.</h2>
+            <p>Get the top Courses for just 499. just one day to save but lifetime learning</p>
+
+        </div>
+
     </div>
+    <!--RECOMMENDED-->
     <div class="recommended">
         <h1 class="recommended__tiltle">
             Recommended for you</h1>
-            <p>Pick The Best</p>
-            <div class="recommended__container">
+        <p>Pick The Best</p>
+        <div class="recommended__container">
             <div class="Course-card">
                 <img src="./Images/c1.jpg" alt="Course Image">
                 <h3>2023 Python Data Visualisation Masterclass</h3>
                 <p>col Steele</p>
                 <p>4.9 ⭐⭐⭐⭐</p>
-            <p>499 <del>1999</del></p>
+                <p>499 <del>1999</del></p>
             </div>
 
             <div class="Course-card">
@@ -88,122 +104,126 @@
 
 
             </div>
-                
+
         </div>
     </div>
-<div class="topics">
-    <h1 class="topics__title">Topics</h1>
-    <div class="topics__container">
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JS</p>
-        <p>PYTHON</p>
-        <p>MONGO DB</p>
-        <p>REACT JS</p>
-        <p>AWS</p>
-        <p>MONSTER</p>
-        <p>HUNTER</p>
+    <!--TOPICS-->
+    <div class="topics">
+        <h1 class="topics__title">Topics</h1>
+        <div class="topics__container">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JS</p>
+            <p>PYTHON</p>
+            <p>MONGO DB</p>
+            <p>REACT JS</p>
+            <p>AWS</p>
+            <p>MONSTER</p>
+            <p>HUNTER</p>
+        </div>
     </div>
-</div>
-<div class="popular">
-<h1 class="popular__title">Popular</h1>
-<p class="popular__subtitle">Pick The Best Fit</p>
-<div class="popular__container">
-    <div class="Course-card">
-        <img src="./Images/c1.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-    <p>499 <del>1999</del></p>
+    <!--POPULAR-->
+    <div class="popular">
+        <h1 class="popular__title">Popular</h1>
+        <p class="popular__subtitle">Pick The Best Fit</p>
+        <div class="popular__container">
+            <div class="Course-card">
+                <img src="./Images/c1.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+            </div>
+
+            <div class="Course-card">
+                <img src="./Images/c2.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+
+
+            </div>
+            <div class="Course-card">
+                <img src="./Images/c3.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+
+
+            </div>
+            <div class="Course-card">
+                <img src="./Images/c4.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+
+
+            </div>
+            <div class="Course-card">
+                <img src="./Images/c4.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+
+
+            </div>
+            <div class="Course-card">
+                <img src="./Images/c3.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+
+
+            </div>
+            <div class="Course-card">
+                <img src="./Images/c2.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+
+
+            </div>
+            <div class="Course-card">
+                <img src="./Images/c1.jpg" alt="Course Image">
+                <h3>2023 Python Data Visualisation Masterclass</h3>
+                <p>col Steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>499 <del>1999</del></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__one">
+            <div class="footer__one__s1">
+                <p>Udemy Business</p>
+                <p>Teach on Udemy</p>
+                <p>Get the app</p>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+            <div class="footer__one__s2">
+                <p>Blog</p>
+                <p>Help And Support</p>
+                <p>Affilate</p>
+                <p>Investor</p>
+                <p>Careers</p>
+            </div>
+
+        </div>
+
+        <div class="footer__two">
+            <h1>Udemy</h1>
+            <p>&copy; Inc</p>
+        </div>
+    </div>
     </div>
 
-    <div class="Course-card">
-        <img src="./Images/c2.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-        <p>499 <del>1999</del></p>
-
-
-    </div>
-    <div class="Course-card">
-        <img src="./Images/c3.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-        <p>499 <del>1999</del></p>
-
-
-    </div>
-    <div class="Course-card">
-        <img src="./Images/c4.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-        <p>499 <del>1999</del></p>
-
-
-    </div>
-    <div class="Course-card">
-        <img src="./Images/c4.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-        <p>499 <del>1999</del></p>
-
-
-    </div>
-    <div class="Course-card">
-        <img src="./Images/c3.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-        <p>499 <del>1999</del></p>
-
-
-    </div>
-    <div class="Course-card">
-        <img src="./Images/c2.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-        <p>499 <del>1999</del></p>
-
-
-    </div>
-    <div class="Course-card">
-        <img src="./Images/c1.jpg" alt="Course Image">
-        <h3>2023 Python Data Visualisation Masterclass</h3>
-        <p>col Steele</p>
-        <p>4.9 ⭐⭐⭐⭐</p>
-    <p>499 <del>1999</del></p>
-    </div>
-</div>
-</div>
-<div class="footer">
-<div class="footer__one">
- <div class="footer__one__s1">
-<p>Udemy Business</p>
-<p>Teach on Udemy</p>
-<p>Get the app</p>
-<p>About us</p>
-<p>Contact us</p></div>
-<div class="footer__one__s2">
-    <p>Blog</p>
-    <p>Help And Support</p>
-    <p>Affilate</p>
-    <p>Investor</p>
-    <p>Careers</p></div>
-
- </div>
-
-<div class="footer__two">
-    <h1>Udemy</h1>
-    <p>&copy; Inc</p>
-</div>
-</div>
-</div>
-    
 
 </body>
 
