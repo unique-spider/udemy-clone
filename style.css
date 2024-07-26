@@ -51,6 +51,7 @@ body {
     display: flex;
     gap: 10px;
 }
+.navbar__s4{display: none;}
 
 /* My Learning */
 .mylearning {
@@ -138,7 +139,9 @@ opacity: 1;}
 
 
 .Course-card {
-    width: 250px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .Course-card img {
@@ -198,4 +201,22 @@ opacity: 1;}
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+/* Media Queries */
+@media screen and (max-width:800px) {
+    body{font-size: 10px;}
+    
+}
+@media screen and (max-width:600px) {
+    .Course-card{flex-basis: 40%;
+    } .categories{ display: none;}
+    .navbar__s2 ,.navbar__s3{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
+    .image-sales__offer{
+        top: 50px;
+    }
 }
